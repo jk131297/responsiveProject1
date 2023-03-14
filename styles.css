@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{    
+    background-color: aquamarine;    
+    text-align: center;
+}
+
+.container p{
+    margin: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:1440px) {
+    body{    
+        background-color: forestgreen;
+    }
+
+    .container p::after{
+        content: "Screen Size: 1440px";
+        display: block;
+        margin: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+    body{    
+        background-color: goldenrod;
+    }
+
+    .container p::after{
+        content: "Screen Size: 1024px";
+        display: block;
+        margin: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    body{    
+        background-color: aqua;
+    }
+
+    .container p::after{
+        content: "Screen Size: 768px";
+        display: block;
+        margin: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+
+    }
+}
+
+@media only screen and (max-width:425px) {
+    body{    
+        background-color: #dc4040;
+    }
+
+    .container p::after{
+        content: "Screen Size: 425px";
+        display: block;
+        margin: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+
+    }
+}
